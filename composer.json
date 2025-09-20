@@ -1,0 +1,29 @@
+{
+  "name": "aaqibshahzad/scalekit",
+  "description": "ScaleKit - SaaS starter kit (Sanctum, Socialite, Spatie, optional single-db tenancy)",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "aaqibShahzad\\ScaleKit\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "aaqibShahzad\\ScaleKit\\ScaleKitServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": ">=8.4",
+    "laravel/framework": "^12",
+    "laravel/sanctum": "^4.0",
+    "laravel/socialite": "^6.0",
+    "spatie/laravel-permission": "^6.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0",
+    "pestphp/pest": "^4.0"
+  }
+}
